@@ -1,0 +1,161 @@
+.wrapper
+  .header
+    .header__logo
+      %h1 Portforio Site
+      %p DAIGO KOMORI
+  .naviBer
+    %ul
+      %li
+        =link_to "#profile" do
+          = icon('fas', 'user')
+          %span Profile
+      %li
+        =link_to "#skill" do
+          = icon('fas', 'laptop')
+          %span Skill Set
+      %li
+        =link_to "#works" do
+          = icon('fas', 'check-square')
+          %span Works
+      %li
+        =link_to "#contact" do
+          = icon('fas', 'envelope')
+          %span Contact
+  .main
+    .main__profile
+      .main__profile__heading
+        %h1 
+          = icon('fas', 'user')
+          %span#profile Profile
+      .main__profile__containar
+        .main__profile__containar__image
+          = image_tag '5555.png'
+        .main__profile__containar__text
+          %p はじめまして。小森大悟と申します。<br>1982年生まれ、37歳の駆け出しエンジニアです。<br><br>大学卒業後、大道芸人、記者・ライター、デザイナー職などを経験。前職の公共ホール職員としてホームページ及びシステムのリニューアル業務に携わる中、エンジニアに興味を持ち独学を開始。その面白さ、クリエイティブさ、今後の発展性を感じ、転職を決意しました。<br><br>2020年3月27日、テックキャンプ中洲校70期短期集中コース卒業。
+    .main__skill
+      .main__skill__heading
+        %h1 
+          = icon('fas', 'laptop')
+          %span#skill Skill Set
+      .main__skill__containar
+        .main__skill__containar__box
+          .main__skill__containar__box__title
+            言語
+          .main__skill__containar__box__text
+            %ul
+              %li HTML5/haml
+              %li CSS3/Scss
+              %li javascript
+              %li jQuery
+              %li ruby
+        .main__skill__containar__box
+          .main__skill__containar__box__title
+            フレームワーク
+          .main__skill__containar__box__text
+            %ul
+              %li Ruby on Rails
+        .main__skill__containar__box
+          .main__skill__containar__box__title
+            開発環境・サーバー
+          .main__skill__containar__box__text
+            %ul
+              %li AWS
+              %li Heroke
+        .main__skill__containar__box
+          .main__skill__containar__box__title
+            その他
+          .main__skill__containar__box__text
+            %ul
+              %li MySQL
+              %li git,github
+              %li Adobe Illustrater
+              %li Adobe Photoshop
+    .main__works
+      .main__works__heading
+        %h1 
+          = icon('fas', 'check-square')
+          %span#works Works
+      .main__works__containar
+        .main__works__containar__box
+          .main__works__containar__box__image
+            =link_to "#" do
+              =image_tag 'portfolio.png'
+          .main__works__containar__box__text
+            .title
+              %h1 ポートフォリオ
+            .details
+              %p 自分自身のポートフォリオサイト
+              %h2 開発環境
+              %ul
+                %li ▶︎ html
+                %li ▶︎ Scss
+                %li ▶︎ Ruby on Rails
+                %li ▶︎ Visual Studio Code
+                %li ▶︎ github
+                %li ▶︎ heroku
+              =link_to "#" do
+                github
+        .main__works__containar__box
+          .main__works__containar__box__image
+            =link_to "http://18.177.94.9/" do
+              =image_tag 'furima.png'
+          .main__works__containar__box__text
+            .title
+              %h1 Furima
+            .details
+              %p 既存フリマアプリサービスのクローンサイト。チーム4名でのアジャイル開発（4週）。
+              %h2 開発環境
+              %ul
+                %li ▶︎ Ruby  ▶︎ Ruby on Rails
+                %li ▶︎ MySQL  ▶︎ Github
+                %li ▶︎ AWS
+                %li ▶︎ Visual Studio Code
+                %li ▶︎ haml&Scss
+                %li ▶︎ javascript  ▶︎ jQuery
+              =link_to "https://github.com/daikichi1113/freemarket_sample_70a" do
+                github
+        .main__works__containar__box
+          .main__works__containar__box__image
+            =link_to "#" do
+              =image_tag 'furima.png'
+          .main__works__containar__box__text
+            .title
+              %h1 family calendar<br>〜ファミカレ〜
+            .detail
+              %p グループチャット付きカレンダーアプリ
+              %h2 開発環境
+              %ul
+                %li ▶︎ Ruby
+                %li ▶︎ Ruby on Rails
+                %li ▶︎ MySQL  ▶︎ Github
+                %li ▶︎ Visual Studio Code
+                %li ▶︎ haml&Scss  ▶︎ javascript
+                %li ▶︎ AWS
+              =link_to "https://github.com/daikichi1113/famicale" do
+                github
+    .main__contact
+      .main__contact__heading
+        %h1 
+          = icon('fas', 'envelope')
+          %span#contact Contact
+      .main__contact__DM
+        %p ご相談、ご質問はtwitterのDMより受け付けています。
+        =link_to "https://twitter.com/daikichipfm" do
+          = icon('fab', 'twitter')
+          %span @daikichipfm
+
+  .footer
+    %ul
+      %li
+        =link_to "#profile" do
+          Profile
+      %li
+        =link_to "#skill" do
+          Skill Set
+      %li
+        =link_to "#works" do
+          Works
+      %li
+        =link_to "#contact" do
+          Contact
+    %p ©DAIGO KOMORI. All Rights Reserved.
